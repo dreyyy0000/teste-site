@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tabela de pacotes educativos Sleeve Script com preços acessíveis." />
   <title>Sleeve Script</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4150/4150909.png" />
 
@@ -31,6 +33,19 @@
       backdrop-filter: blur(5px);
       overflow: hidden;
       z-index: 1;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('gato comendo manga.webp') no-repeat center center;
+      background-size: cover;
+      opacity: 0.15;
+      z-index: -1;
     }
 
     h1 {
@@ -111,6 +126,18 @@
       text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
     }
 
+    .dino {
+      margin: 20px auto 10px;
+      width: 80px;
+      opacity: 0.85;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+      transition: transform 0.3s;
+    }
+
+    .dino:hover {
+      transform: scale(1.1);
+    }
+
     @media (max-width: 600px) {
       th, td {
         font-size: 0.9rem;
@@ -132,4 +159,22 @@
       </thead>
       <tbody>
         <tr><td>Pack 1</td><td>Speak Vitalício</td><td class="price">35,00R$</td></tr>
-        <tr><td>Pack 2</td><td
+        <tr><td>Pack 2</td><td>Khan Academy Mensal</td><td class="price">20,00R$</td></tr>
+        <tr><td>Pack 3</td><td>Tarefas Sp Mensal</td><td class="price">15,00R$</td></tr>
+        <tr><td>Pack 4</td><td>Redação Paulista Mensal</td><td class="price">10,00R$</td></tr>
+        <tr><td>Pack 5</td><td>Speak Vitalício + Khan Academy Mensal</td><td class="price">45,00R$</td></tr>
+        <tr><td>Pack 6</td><td>Speak Vitalício + Tarefas Sp Mensal</td><td class="price">40,00R$</td></tr>
+        <tr><td>Pack 7</td><td>Tarefas Sp Mensal + Khan Academy Mensal</td><td class="price">30,00R$</td></tr>
+        <tr><td>Pack 8</td><td>Tarefas Sp Mensal, Khan Academy Mensal, Speak Vitalício, Redação Paulista Mensal</td><td class="price">65,00R$</td></tr>
+        <tr><td>Pack 9</td><td>Speak Vitalício + Redação Paulista Mensal</td><td class="price">40,00R$</td></tr>
+        <tr><td>Pack 10</td><td>Khan Academy Mensal + Redação Paulista Mensal</td><td class="price">25,00R$</td></tr>
+        <tr><td>Pack 11</td><td>Tarefas Sp Mensal + Redação Paulista Mensal</td><td class="price">20,00R$</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <img class="dino" src="https://www.gifcen.com/wp-content/uploads/2025/05/dinosaur-game-gif-1.gif" alt="Dino do Chrome" /> 
+
+  <footer>Desenvolvido por Anônimo e Koyashy</footer>
+</body>
+</html>
